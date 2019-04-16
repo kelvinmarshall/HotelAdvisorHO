@@ -5,13 +5,13 @@ package dev.marshall.hoteladvisorho.common;
  */
 
 public class Config {
-    public static final String PAYPAL_CLIEN_ID="AWsyodYs00LKo9wyJx35PA789SgKn5z__OsWcicGTE-E4BitoOHzbeAEkiYpltHWsqCrPpvs4IDz-dvT";
+    public static final String PAYPAL_CLIEN_ID="PAYPAL CLIENT ID";
 
 
     //Use credentials from your Lipa na MPESA Online(MPesa Express) App from the developer portal
 
-    public static final String CONSUMER_KEY = "drK9PdAIrAKSZ1o6COURgmV4toDS17E9";
-    public static final String CONSUMER_SECRET = "FYcUwXoMGFYOiiV3";
+    public static final String CONSUMER_KEY = "DARAJA CONSUMER KEY";
+    public static final String CONSUMER_SECRET = "DARAJA CONSUMER SECRET";
     // global topic to receive app wide push notifications
     public static final String TOPIC_GLOBAL = "global";
 
