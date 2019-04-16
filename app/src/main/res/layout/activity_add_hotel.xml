@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlayout"
+    tools:context="dev.marshall.hoteladvisorho.AddHotel">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:text="Select image from phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/addimagehotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/gray_btn_bg_pressed_color"
+                    android:src="@android:drawable/ic_menu_camera" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hotel details"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Name of the hotel :"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_errorColor="@color/red_btn_bg_color"
+                                app:met_primaryColor="@android:color/black" />
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/hotelclass"
+                                android:text="Hotel class"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="County :"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addcounty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Location Address:"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addLaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Average price:"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:inputType="number"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hotel Website(url):"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addurl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:inputType="text"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Detailed information:"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/addinfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:inputType="text|textMultiLine|textLongMessage"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:text="Amenities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <GridLayout
+                            android:columnCount="4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_local_parking_black_24dp"
+                                android:text="Parking"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:drawablePadding="12dp"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbparking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                            />
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_local_cafe_black_24dp"
+                                android:text="Food and Drink "
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbfood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_pool_black_24dp"
+                                android:text="Swimming pool"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbpool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_local_laundry_service_black_24dp"
+                                android:text="Laundry"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chblaundry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_lock_black_24dp"
+                                android:text="Security"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:drawablePadding="12dp"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbsecurity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_wifi_black_24dp"
+                                android:text="Internet"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbinternet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_airconditioning"
+                                android:text="Air Conditioning"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbair"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_local_bar_black_24dp"
+                                android:text="Bar/Lounge"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_room_service_black_24dp"
+                                android:text="Room Servicee"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbroom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_fitness_center_black_24dp"
+                                android:text="Gym"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbgym"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_golf_course_black_24dp"
+                                android:text="Golf course"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbgolf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"
+                                />
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_spa_black_24dp"
+                                android:text="spa"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbspa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_beach_access_black_24dp"
+                                android:text="Beach Access"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbbeach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_airport_shuttle_black_24dp"
+                                android:text="Airport Shuttle"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/chbairport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_casino_black_24dp"
+                                android:text="Casino"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/casino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:drawableStart="@drawable/ic_child_friendly_black_24dp"
+                                android:text="Child Friendly"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAlignment="inherit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.rey.material.widget.CheckBox
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/child"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Material.Drawable.CheckBox"
+                                android:gravity="center_vertical"
+                                app:cbd_strokeColor="@android:color/black"
+                                app:cbd_tickColor="@color/colorPrimaryDark"/>
+                        </GridLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:text="Hotel Polices"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:columnCount="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Check-In :"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:layout_columnWeight="1"
+                                android:id="@+id/chkin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Check-Out :"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:layout_columnWeight="1"
+                                android:id="@+id/chkout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black"
+                                />
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Extras :"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:layout_columnWeight="1"
+                                android:id="@+id/Extras"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:text="Hotel Polices"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Dining:"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:layout_columnWeight="1"
+                                android:id="@+id/dinin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="recreation:"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/recrea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="What's Near"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/nea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black"
+                                />
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Additional Information :"/>
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/add"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text|textMultiLine"
+                                android:textSize="16sp"
+                                app:met_baseColor="@android:color/black"
+                                app:met_primaryColor="@android:color/black" />
+
+                        </LinearLayout>
+                        <Button
+                            android:padding="8dp"
+                            android:textAllCaps="false"
+                            android:layout_gravity="end"
+                            android:id="@+id/submitdetails"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@android:color/black"
+                            android:text="Submit Details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

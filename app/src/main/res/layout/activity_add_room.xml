@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="8dp"
+    android:id="@+id/layoutaddroom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingStart="15dp"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Add Hotel room details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:background="@color/gray_btn_bg_pressed_color"
+                        android:id="@+id/editimageroom"
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="8dp"
+                        android:drawingCacheQuality="auto"
+                        android:scaleType="centerCrop"
+                        android:src="@android:drawable/ic_menu_camera" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="35dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price :"/>
+                        <EditText
+                            android:id="@+id/room_p"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:text="Capacity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:layout_weight="1"
+                            android:id="@+id/roomcapacity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Type :"/>
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/roomtype"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:background="#fafafa"
+                android:layout_height="10dp"
+               android:layout_width="match_parent"/>
+            <TextView
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Features"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                style="@style/Divider"/>
+            <TextView
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:text="Check or Uncheck according to availability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                style="@style/Divider"/>
+            <GridLayout
+                android:layout_marginTop="15dp"
+                android:paddingStart="30dp"
+                android:columnCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Breakfast included"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:drawablePadding="12dp"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Lunch Included"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Dinner Included"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Book now, pay later!"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/booknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Free cancellation up to 23 hours"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:id="@+id/free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Hot shower"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/hotshower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Bath tub"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/bathtab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Digital TV"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="inherit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <com.rey.material.widget.CheckBox
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/digital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:gravity="center_vertical"
+                    app:cbd_strokeColor="@android:color/black"
+                    app:cbd_tickColor="@color/colorPrimaryDark"
+                    />
+            </GridLayout>
+            <Button
+                android:id="@+id/submit_room"
+                android:layout_margin="15dp"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.CardView>

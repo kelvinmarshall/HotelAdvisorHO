@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <ImageView
+                    android:id="@+id/hotel_image"
+                    android:src="@drawable/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_marginTop="0.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                    <info.hoang8f.widget.FButton
+                        app:shadowEnabled="false"
+                        android:layout_gravity="center_vertical"
+                        android:drawableTop="@drawable/ic_add_box_black_24dp"
+                        android:text="Add Hotel"
+                        android:layout_weight="1"
+                        android:id="@+id/addHotel"
+                        android:textAllCaps="false"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:cornerRadius="0dp"
+                        app:fButtonColor="@android:color/white"/>
+                    <View
+                        android:layout_width="1dp"
+                        style="@style/Divider"
+                        android:layout_height="match_parent"/>
+
+                    <info.hoang8f.widget.FButton
+                        android:drawableTop="@drawable/ic_hotel_black_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="My Hotels"
+                        app:shadowEnabled="false"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:id="@+id/myhotels"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:cornerRadius="0dp"
+                        app:fButtonColor="@android:color/white"
+                        />
+                    <View
+                        android:layout_width="1dp"
+                        style="@style/Divider"
+                        android:layout_height="match_parent"/>
+
+                    <info.hoang8f.widget.FButton
+                        android:drawableTop="@drawable/ic_rate_review_black_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Reviews"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        app:shadowEnabled="false"
+                        android:id="@+id/reviews"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:cornerRadius="0dp"
+                        app:fButtonColor="@android:color/white"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    style="@style/Divider"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+                        <info.hoang8f.widget.FButton
+
+                            android:layout_gravity="center_vertical"
+                            android:drawableTop="@drawable/ic_web_black_24dp"
+                            android:text="Hotel Website"
+                            android:layout_weight="1"
+                            app:shadowEnabled="false"
+                            android:id="@+id/website"
+                            android:textAllCaps="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:cornerRadius="0dp"
+                            app:fButtonColor="@android:color/white"
+                            />
+                        <View
+                            android:layout_width="1dp"
+                            style="@style/Divider"
+                            android:layout_height="match_parent"/>
+
+                        <info.hoang8f.widget.FButton
+                            android:drawableTop="@drawable/ic_open_in_browser_black_24dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Web Visitors"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:id="@+id/visitors"
+                            app:shadowEnabled="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:cornerRadius="0dp"
+                            app:fButtonColor="@android:color/white"
+                            />
+                        <View
+                            android:layout_width="1dp"
+                            style="@style/Divider"
+                            android:layout_height="match_parent"/>
+                        <info.hoang8f.widget.FButton
+                            android:drawableTop="@drawable/ic_email_black_24dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Contact Us"
+                            android:layout_weight="1"
+                            app:shadowEnabled="false"
+                            android:textAllCaps="false"
+                            android:id="@+id/contact"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            app:cornerRadius="0dp"
+                            app:fButtonColor="@android:color/white"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

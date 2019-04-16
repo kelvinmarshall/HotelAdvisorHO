@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Check-In :"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_columnWeight="1"
+            android:id="@+id/chkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="false"  />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Check-Out :"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_columnWeight="1"
+            android:id="@+id/chkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="false"  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Extras :"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_columnWeight="1"
+            android:id="@+id/Extras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:textSize="16sp"
+            app:met_baseColor="@android:color/black"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="false"  />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

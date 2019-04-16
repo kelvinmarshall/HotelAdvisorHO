@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_booking"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/Bbnotifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/Bb"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/Bbprofile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Tips" />
+
+
+</menu>

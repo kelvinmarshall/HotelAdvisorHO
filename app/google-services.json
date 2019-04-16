@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "164069539197",
+    "firebase_url": "https://hoteladvisor-f381f.firebaseio.com",
+    "project_id": "hoteladvisor-f381f",
+    "storage_bucket": "hoteladvisor-f381f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164069539197:android:d683cd691bdadb97",
+        "android_client_info": {
+          "package_name": "dev.marshall.hoteladvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164069539197-1ethdicuucq6l8tnqpdkbn1vuon84d60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.marshall.hoteladvisor",
+            "certificate_hash": "2c9ca1fb6a53391a8f7fa61ee9121f6e024db302"
+          }
+        },
+        {
+          "client_id": "164069539197-85o202h29tbq62djengc4uk4ij66sm09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLTOCBxOQOUyyj7kVcY14AU-2F7viC_gI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164069539197-85o202h29tbq62djengc4uk4ij66sm09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164069539197:android:1ae84b1af09e4d37",
+        "android_client_info": {
+          "package_name": "dev.marshall.hoteladvisorho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164069539197-3qggog20809ke6s7nhng9vv0qeihmi2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.marshall.hoteladvisorho",
+            "certificate_hash": "2c9ca1fb6a53391a8f7fa61ee9121f6e024db302"
+          }
+        },
+        {
+          "client_id": "164069539197-85o202h29tbq62djengc4uk4ij66sm09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLTOCBxOQOUyyj7kVcY14AU-2F7viC_gI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164069539197-85o202h29tbq62djengc4uk4ij66sm09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

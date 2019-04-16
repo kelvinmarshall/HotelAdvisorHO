@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlayout"
+    tools:context="dev.marshall.hoteladvisorho.AddHotel">
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:text="Select image from phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/ic_local_hotel_black_24dp"
+                    android:background="@color/gray_btn_bg_color"
+                    android:id="@+id/addimagehotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:tint="@color/white"
+                    />
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:text="Hotel details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name of the hotel :"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/addname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:inputType="text|textMultiLine"
+                            android:textSize="16sp"
+                            app:met_baseColor="@android:color/black"
+                            app:met_errorColor="@color/red_btn_bg_color"
+                            app:met_primaryColor="@android:color/black" />
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/hotelclass"
+                            android:text="Hotel class"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="County :"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/addcounty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text|textMultiLine"
+                            android:textSize="16sp"
+                            app:met_baseColor="@android:color/black"
+                            app:met_primaryColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location Address:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/addLaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:inputType="text|textMultiLine"
+                            android:textSize="16sp"
+                            app:met_baseColor="@android:color/black"
+                            app:met_primaryColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Average price:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/addprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:inputType="number"
+                            android:textSize="16sp"
+                            app:met_baseColor="@android:color/black"
+                            app:met_primaryColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hotel Website(url):"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/addurl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:inputType="text"
+                            android:textSize="16sp"
+                            app:met_baseColor="@android:color/black"
+                            app:met_primaryColor="@android:color/black" />
+                    </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>
